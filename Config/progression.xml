@@ -1,0 +1,15 @@
+<IronSharkInc>
+
+    <append xpath="//crafting_skills">
+    	<crafting_skill name="painting" max_level="50" parent="attCrafting" name_key="craftingRepairToolsName" desc_key="craftingRepairToolsDesc" long_desc_key="craftingRepairToolsLongDesc" icon="ui_game_symbol_hammer">
+            <!-- TODO: keep in sync with CrafitingTier -->
+            <display_entry item="isiPaintBrush" unlock_level="10,12,14,16,18,20" />
+            <effect_group>
+                <!-- TODO: balance -->
+                <passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,50" value="1" tags="isiPaintBrush"/>
+                <passive_effect name="CraftingTier" operation="base_add" level="12,14,16,18,20,100" value="1,2,3,4,5,5" tags="isiPaintBrush"/>
+            </effect_group>
+        </crafting_skill>
+    </append>
+
+</IronSharkInc>

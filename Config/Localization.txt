@@ -1,0 +1,4 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+resourcePaintDesc,items,Item,,,"Use a paint brush to paint building blocks. Crafted in lots of 500.",,,,,,,,,,,,,
+isiPaintBrush,items,Tool,,,Upgraded Paint Brush,,,,,,,,,,,,,
+isiPaintBrushDesc,items,Tool,,,"An upgraded paint brush that paints faster, farther, and more precisely. It does not consume paint, but it degrades with use. Repairs with paint.",,,,,,,,,,,,,

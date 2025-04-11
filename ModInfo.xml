@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<Name value="ISI-UpgradedPaintBrush" />
+	<DisplayName value="ISI Upgraded Paint Brush" />
+	<Version value="1.3.0.0" />
+	<Description value="Adds a player version of the 'Dev: Paint Brush' (infinite paint, faster, more precise, more range), but it degrades over time. Repairs with paint." />
+	<Author value="IronSharkInc" />
+	<Website value="https://github.com/IronSharkInc" />
+</xml>

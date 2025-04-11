@@ -1,0 +1,40 @@
+<!-- NOTE: Crafting menu only shows first 5 ingredients. Tracker only shows first 8 ingredients. -->
+
+<IronSharkInc>
+
+    <!-- Add recipe for upgraded paint brush -->
+    <append xpath="//recipes">
+        <!-- TODO: crafting times -->
+        <!-- TODO: balance -->
+        <recipe name="isiPaintBrush" count="1" craft_time="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+            <ingredient name="meleeToolPaintTool" count="1"/>
+            <ingredient name="resourcePaint" count="0"/>
+            <ingredient name="resourceLegendaryParts" count="0"/>
+            <effect_group>
+                <!-- TODO: balance -->
+        		<passive_effect name="CraftingIngredientCount" level="1,5,6" operation="base_add" value="500,2500,10000" tags="resourcePaint"/>
+		        <passive_effect name="CraftingIngredientCount" level="6" operation="base_add" value="1" tags="resourceLegendaryParts"/>
+	        </effect_group>
+        </recipe>
+    </append>
+
+    <!-- Remove old paint recipes -->
+    <remove xpath="//recipe[@name='resourcePaint']" />
+
+    <!-- Add new paint recipes -->
+    <append xpath="//recipes">
+        
+        <!-- 1/2 the time -->
+        <recipe name="resourcePaint" count="500" craft_time="10" craft_area="chemistryStation" tags="chemStationCrafting">
+            <ingredient name="resourceCropChrysanthemumPlant" count="1"/>
+            <ingredient name="drinkJarBoiledWater" count="1"/>
+        </recipe>
+
+        <!-- double input/output to make it more obvious chem is cheaper and faster, cut time in half so it doesn't fee like a nerf -->
+        <recipe name="resourcePaint" count="500" craft_time="20" craft_area="campfire" craft_tool="toolCookingPot">
+            <ingredient name="resourceCropChrysanthemumPlant" count="2"/>
+            <ingredient name="drinkJarBoiledWater" count="2"/>
+        </recipe>
+    </append>
+
+</IronSharkInc>

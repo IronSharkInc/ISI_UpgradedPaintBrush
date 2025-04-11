@@ -1,0 +1,7 @@
+<IronSharkInc>
+    <append xpath="//ui_display_info/item_display">
+        <item_display_info display_type="meleePaintTool" display_group="groupMelee">
+			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkMiner69r,perkAdvancedEngineering,admin"/>
+		</item_display_info>
+    </append>
+</IronSharkInc>
