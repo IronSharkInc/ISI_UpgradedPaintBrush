@@ -38,7 +38,7 @@
             <!-- TODO: balance -->
             <requirement name="CVarCompare" cvar="isiPaintBrushStrokes" operation="GTE" value="10"/>
             <requirement name="!HoldingItemBroken"/>
-            <triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="isiPaintBrushStrokes" operation="set" value="1"/>
+            <triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="isiPaintBrushStrokes" operation="set" value="0"/>
             <triggered_effect trigger="onSelfSecondaryActionEnd" action="AddProgressionLevel" progression_name="painting" level="1"/>
             <triggered_effect trigger="onSelfSecondaryActionEnd" action="GiveExp" exp="50"/>
         </effect_group>

@@ -8,7 +8,7 @@
             <effect_group>
                 <!-- TODO: balance -->
                 <passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,30" value="1" tags="isiPaintBrush"/>
-                <passive_effect name="CraftingTier" operation="base_add" level="10,15,20,25,30,30" value="1,2,3,4,5,5" tags="isiPaintBrush"/>
+                <passive_effect name="CraftingTier" operation="base_add" level="10,15,20,25,30,100" value="1,2,3,4,5,5" tags="isiPaintBrush"/>
             </effect_group>
         </crafting_skill>
     </append>
