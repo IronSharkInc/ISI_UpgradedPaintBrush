@@ -12,7 +12,7 @@
             <ingredient name="resourceLegendaryParts" count="0"/>
             <effect_group>
                 <!-- TODO: balance -->
-                <passive_effect name="CraftingIngredientCount" level="1,5,6" operation="base_add" value="500,2500,10000" tags="resourcePaint"/>
+                <passive_effect name="CraftingIngredientCount" level="1,5,6" operation="base_add" value="500,2500,5000" tags="resourcePaint"/>
                 <passive_effect name="CraftingIngredientCount" level="6" operation="base_add" value="1" tags="resourceLegendaryParts"/>
             </effect_group>
         </recipe>
@@ -30,7 +30,7 @@
             <ingredient name="drinkJarBoiledWater" count="1"/>
         </recipe>
 
-        <!-- double input/output to make it more obvious chem is cheaper and faster, cut time in half so it doesn't fee like a nerf -->
+        <!-- 1/2 the time (so the rest doesn't feel like a nerf), double input/output to make it more obvious chem is cheaper and faster -->
         <recipe name="resourcePaint" count="500" craft_time="20" craft_area="campfire" craft_tool="toolCookingPot">
             <ingredient name="resourceCropChrysanthemumPlant" count="2"/>
             <ingredient name="drinkJarBoiledWater" count="2"/>
