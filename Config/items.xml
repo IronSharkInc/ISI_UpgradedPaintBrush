@@ -13,8 +13,8 @@
             <effect_group name="isiPaintBrush">
                 <!-- sets max durability and rate of decay -->
                 <!-- TODO: balance -->
-                <passive_effect name="DegradationMax" operation="base_set" value="500,2500,10000" tier="1,5,6"/>
-		        <passive_effect name="DegradationPerUse" operation="base_set" value="10,10,1" tier="1,5,6"/>
+                <passive_effect name="DegradationMax" operation="base_set" value="30,75,125,200,300,1000" tier="1,2,3,4,5,6"/>
+                <passive_effect name="DegradationPerUse" operation="base_set" value="1,1,0" tier="1,5,6"/>
                 <!-- necessary to prevent the crosshairs from spreading infinitely -->
                 <passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="0"/>
                 <passive_effect name="SpreadDegreesVertical" operation="base_set" value="0"/>
@@ -36,7 +36,7 @@
         </effect_group>
         <effect_group tiered="false">
             <!-- TODO: balance -->
-            <requirement name="CVarCompare" cvar="isiPaintBrushStrokes" operation="GTE" value="5"/>
+            <requirement name="CVarCompare" cvar="isiPaintBrushStrokes" operation="GTE" value="10"/>
             <requirement name="!HoldingItemBroken"/>
             <triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="isiPaintBrushStrokes" operation="set" value="1"/>
             <triggered_effect trigger="onSelfSecondaryActionEnd" action="AddProgressionLevel" progression_name="painting" level="1"/>
@@ -49,8 +49,8 @@
 
     <!-- Use paint to repair paint brush -->
     <append xpath="//item[@name='resourcePaint']">
-        <property name="RepairTime" value="0.01"/>
-	    <property name="RepairAmount" value="1"/>
+        <property name="RepairTime" value="0.05"/>
+        <property name="RepairAmount" value="1"/>
     </append>
 
 </IronSharkInc>

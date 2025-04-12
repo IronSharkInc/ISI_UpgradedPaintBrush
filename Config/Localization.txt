@@ -2,3 +2,7 @@ Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german
 resourcePaintDesc,items,Item,,,"Use a paint brush to paint building blocks. Crafted in lots of 500.",,,,,,,,,,,,,
 isiPaintBrush,items,Tool,,,Upgraded Paint Brush,,,,,,,,,,,,,
 isiPaintBrushDesc,items,Tool,,,"An upgraded paint brush that paints faster, farther, and more precisely. It does not consume paint, but it degrades with use. Repairs with paint.",,,,,,,,,,,,,
+
+isiPaintToolsName,progression,Attribute,,,Painting Tools,,,,,,,,,,,,,
+isiPaintToolsDesc,progression,Attribute,,,The more you paint the better brushes you can make,,,,,,,,,,,,,
+isiPaintToolsLongDesc,progression,Attribute,,x,CURRENTLY NOT USED,,,,,,,,,,,,,
