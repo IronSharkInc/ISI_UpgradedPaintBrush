@@ -4,14 +4,11 @@
 
     <!-- Add recipe for upgraded paint brush -->
     <append xpath="//recipes">
-        <!-- TODO: crafting times -->
-        <!-- TODO: balance -->
-        <recipe name="isiPaintBrush" count="1" craft_time="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+        <recipe name="isiPaintBrush" count="1" craft_time="5" craft_area="workbench" tags="learnable,workbenchCrafting">
             <ingredient name="meleeToolPaintTool" count="1"/>
             <ingredient name="resourcePaint" count="0"/>
             <ingredient name="resourceLegendaryParts" count="0"/>
             <effect_group>
-                <!-- TODO: balance -->
                 <passive_effect name="CraftingIngredientCount" level="1,5,6" operation="base_add" value="500,2500,5000" tags="resourcePaint"/>
                 <passive_effect name="CraftingIngredientCount" level="6" operation="base_add" value="1" tags="resourceLegendaryParts"/>
             </effect_group>

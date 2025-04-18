@@ -12,7 +12,6 @@
             <property name="DisplayType" value="meleePaintTool"/>
             <effect_group name="isiPaintBrush">
                 <!-- sets max durability and rate of decay -->
-                <!-- TODO: balance -->
                 <passive_effect name="DegradationMax" operation="base_set" value="30,75,125,200,300,1000" tier="1,2,3,4,5,6"/>
                 <passive_effect name="DegradationPerUse" operation="base_set" value="1,1,0" tier="1,5,6"/>
                 <!-- necessary to prevent the crosshairs from spreading infinitely -->
@@ -35,7 +34,6 @@
             <triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="isiPaintBrushStrokes" operation="add" value="1"/>
         </effect_group>
         <effect_group tiered="false">
-            <!-- TODO: balance -->
             <requirement name="CVarCompare" cvar="isiPaintBrushStrokes" operation="GTE" value="10"/>
             <requirement name="!HoldingItemBroken"/>
             <triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="isiPaintBrushStrokes" operation="set" value="0"/>
