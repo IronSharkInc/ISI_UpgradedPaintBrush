@@ -12,21 +12,3 @@ The new paint brush unlocks as you paint (erasing does not count). Higher qualit
 ![Upgraded Paint Brush](images/levelUp.png)
 ![Upgraded Paint Brush](images/unlock.png)
 ![Upgraded Paint Brush](images/craft1.png)
-
-## Paint Stacks
-
-Paint now stacks to 10,000 instead of 1,000
-
-![Upgraded Paint Brush](images/paintStacks.png)
-
-## Paint Recipes
-
-Adjusts the recipes needed to make paint
-
-- campfire: increased ouput to match chemistry station (e.g. both produce 500 units of paint)
-- campfire: doubled ingredients to maintain ratio with output
-- both: crafting time time halved
-
-![Upgraded Paint Brush](images/chemRecipe.png)
-![Upgraded Paint Brush](images/fireRecipe.png)
-![Upgraded Paint Brush](images/paintDescription.png)

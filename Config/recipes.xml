@@ -15,23 +15,4 @@
         </recipe>
     </append>
 
-    <!-- Remove old paint recipes -->
-    <remove xpath="//recipe[@name='resourcePaint']" />
-
-    <!-- Add new paint recipes -->
-    <append xpath="//recipes">
-        
-        <!-- 1/2 the time -->
-        <recipe name="resourcePaint" count="500" craft_time="10" craft_area="chemistryStation" tags="chemStationCrafting">
-            <ingredient name="resourceCropChrysanthemumPlant" count="1"/>
-            <ingredient name="drinkJarBoiledWater" count="1"/>
-        </recipe>
-
-        <!-- 1/2 the time (so the rest doesn't feel like a nerf), double input/output to make it more obvious chem is cheaper and faster -->
-        <recipe name="resourcePaint" count="500" craft_time="20" craft_area="campfire" craft_tool="toolCookingPot">
-            <ingredient name="resourceCropChrysanthemumPlant" count="2"/>
-            <ingredient name="drinkJarBoiledWater" count="2"/>
-        </recipe>
-    </append>
-
 </IronSharkInc>
